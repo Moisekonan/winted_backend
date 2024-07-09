@@ -1,0 +1,14 @@
+/* SQL product_category sample data */	
+INSERT INTO product_category (name) VALUES
+('Electronics'),
+('Sports'),
+('Kitchen'),
+('Food'),
+('Video'),
+('Fine Art'),
+('Health'),
+('Toy'),
+('Home Appliance'),
+('Automotive'),
+('Travel'),
+('Beauty and Personal Care');
