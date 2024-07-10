@@ -7,13 +7,12 @@ import { Address } from './entities/user-address.entity';
 import { SellerService } from './sellers.service';
 import { SellerController } from './sellers.controller';
 import { AwsService } from 'src/common/services/aws/aws.service';
-import { SmsService } from 'src/common/services/sms.service';
 import { EmailService } from '../common/services/email.service';
 
 @Module({
   imports: [TypeOrmModule.forFeature([User, Address])],
-  providers: [UserService, SellerService, AwsService, SmsService, EmailService],
+  providers: [UserService, SellerService, AwsService, EmailService],
   controllers: [UserController, SellerController],
-  exports: [UserService, SellerService, SmsService, AwsService, EmailService],
+  exports: [UserService, SellerService, AwsService, EmailService],
 })
 export class UsersModule {}
